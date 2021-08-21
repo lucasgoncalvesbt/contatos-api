@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a routerLink="contatos" class="nav-link" routerLinkActive="active">Contatos</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="adicionar" class="nav-link" routerLinkActive="active">Novo Contato</a>
+    </li>
+  </ul>
+</nav>
+<div class="container mt-4">
+  <div class="card bg-opaco">
+    <div class="card-body">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

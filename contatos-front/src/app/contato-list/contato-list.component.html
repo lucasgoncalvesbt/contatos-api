@@ -1,0 +1,30 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Meus Contatos</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Celular</th>
+          <th>Residencial</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let contato of contatos | async">
+          <td>{{contato.nome}} {{contato.sobrenome}}</td>
+          <td>{{contato.numeroCelular}}</td>
+          <td>{{contato.numeroResidencial}}</td>
+          <td><button (click)="removerContato(contato.id)" class="btn btn-dark">Excluir</button>
+            <button (click)="atualizarContato(contato.id)" class="btn btn-outline-dark"
+              style="margin-left: 10px">Editar</button>
+            <button (click)="contatoDetalhes(contato.id)" class="btn btn-outline-dark"
+              style="margin-left: 10px">Detalhes</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    Driver: org.h2.Driver
+    url: jdbc:h2:mem:testedb
+    username: sa
+    password:
+
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    generate-ddl: true
+    show_sql: true
+    properties:
+      hibernate.format_sql: true
+    hibernate:
+      ddl-auto: update
+

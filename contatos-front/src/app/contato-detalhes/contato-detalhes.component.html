@@ -1,0 +1,16 @@
+<div *ngIf="contato">
+  <div>
+    <h2>{{contato.nome}} {{contato.sobrenome}}</h2>
+  </div>
+  <div>
+    <label><b>Numero de Celular: </b></label> {{contato.numeroCelular}}
+  </div>
+  <div>
+    <label><b>Numero Residencial: </b></label> {{contato.numeroResidencial}}
+  </div>
+</div>
+
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-outline-dark">Voltar</button><br>
